@@ -19,7 +19,7 @@ clock=time.Clock()
 
 
 Kratos = image.load("Kratos.png")
-Kratos = transform.scale(Kratos.png, (150,160))
+Kratos = transform.scale(Kratos, (150,160))
 
 kratostexto = font.Font("GODOFWAR.ttf", 40)
 
@@ -83,10 +83,10 @@ while running:
     draw.circle(window, (255,255,255), (nuvem_x+200,nuvem_y),(70))
     draw.circle(window, (255,255,255), (nuvem_x+300,nuvem_y),(70))
 
-    window.blit(Kratos.png, (600,450))
+    window.blit(Kratos, (600,450))
 
 
-    kratostexto = GODOFWAR.ttf.render("HOMENS, QUEIMEM A VILA", True, (0,0,0))
-    window.blit(kratostexto, (570,400))
+    textoaqui = kratostexto.render("HOMENS, QUEIMEM A VILA", True, (0,0,0))
+    window.blit(textoaqui, (570,400))
 
     display.update()
